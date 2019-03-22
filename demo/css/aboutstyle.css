@@ -1,0 +1,355 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+body {
+  font-family: 'Roboto', serif;
+  color: white;
+  margin: 0;
+  background-color:white;
+  font-size: 20px;
+}
+
+.header {
+  position:absolute;
+  left: 50%;
+  margin-left: -750px;
+  width:1500px;
+  height:100%;
+  background-image: linear-gradient(to right bottom, #ffafbd, #ffb3b4, #ffb7ac, #ffbda5, #ffc3a0);
+  overflow: hidden;
+  background-color: transparent;
+  padding: 20px 10px;
+}
+
+.profile {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+h4, h3, p{ cursor: default; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+
+.header a {
+  float:left;
+  position:relative;
+  left: 50%;
+  transform: translate(-50%);
+  text-decoration: none;
+  padding-top:5px;
+  color: rgb(255,255,255,0.65);
+}
+
+
+.header a:hover {
+  color: rgb(255,255,255,0.8);
+
+}
+
+
+.header-right {
+  float: left;
+  position: relative;
+  top:50px;
+  left:71%;
+}
+
+.header .btn {
+  z-index: 1;
+  border: none;
+  outline: none;
+  color: rgb(255,255,255,0.65);
+  letter-spacing:1.2px;
+  padding-bottom: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  border-bottom: 3px solid rgb(255,255,255,0.0);
+}
+
+.header .active {
+  color: rgb(255,255,255,0.9);
+  border-bottom: 3px solid rgb(255,255,255,0.5);
+
+}
+
+.header .btn:hover {
+  color: rgb(255,255,255,0.9);
+  border-bottom: 3px solid rgb(255,255,255,0.5);
+  transition: 0.75s;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+@keyframes example {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.shape-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.shape-1 {
+  animation-name: example;
+  animation-duration: 3s;
+  position: absolute;
+  top: 10px;
+  left: 80px;
+}
+
+.shape-2 {
+  animation-name: example;
+  animation-duration: 6s;
+  position: absolute;
+  top:600px;
+  left: 30px;
+}
+
+.shape-3 {
+  animation-name: example;
+  animation-duration: 6s;
+  position: absolute;
+  top: 700px;
+  left:1670px;
+}
+
+.shape-4 {
+  animation-name: example;
+  animation-duration: 3s;
+  position: absolute;
+  top: 300px;
+  left: 1825px;
+}
+
+.shape-5 {
+  animation-name: example;
+  animation-duration: 6s;
+  position: absolute;
+  top: 300px;
+  left: 0px;
+}
+
+.shape-6 {
+  animation-name: example;
+  animation-duration: 3s;
+  position: absolute;
+  top: 20px;
+  left: 1700px;
+}
+
+.shape-bg {
+  position: absolute;
+  width: 220px;
+  height: 200px;
+}
+
+.shape-bg-blue-light {
+  background: url("images/circle.png");
+  background-size: cover;
+}
+
+.shape-bg-blue-mid {
+  background: url("images/triangle.png");
+  background-size: cover;
+}
+
+.shape-bg-manatee-dark {
+  background: url("images/rice.png");
+  background-size: cover;
+}
+
+.shape-bg-blue-dark {
+  background: url("images/ice.png");
+  background-size: cover;
+}
+
+
+
+.shape-bg-manatee-light {
+  background-image: url('images/boba1.png');
+  background-color: white;
+  background-size: cover;
+}
+
+
+
+.anim-float {
+  -webkit-animation-name: anim-float;
+          animation-name: anim-float;
+  -webkit-animation-duration:15s;
+          animation-duration:15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+}
+
+@-webkit-keyframes anim-float {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  65% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes anim-float {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  65% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+}
+.base-rotate--30 {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.base-rotate-45 {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.base-rotate-20 {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.base-rotate-80 {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.offset-1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+
+.anim-rotate {
+  -webkit-animation-name: anim-rotate;
+          animation-name: anim-rotate;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes anim-rotate {
+  from {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  65% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(30deg);
+  }
+  to {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@keyframes anim-rotate {
+  from {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  65% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  to {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+
+.text {
+  position: absolute;
+  top: 400px;
+  width: 700px;
+  left: -30%;
+  letter-spacing: .75px;
+  text-shadow: #dd8c9f 1.5px 1.5px;
+  cursor: default;
+
+}
+
+.text2 {
+  font-family: 'Raleway', serif;
+  font-size:38px;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 3px solid white;
+  position: absolute;
+  top: 405px;
+  left: -88%;
+  text-shadow: #dd8c9f 2px 2px;
+
+  cursor: default;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  background: white;
+  color: #ffbba7;
+  box-shadow: #dd8c9f 2px 2px;
+
+}
+
+
+.fa:hover {
+  opacity: 0.9;
+}

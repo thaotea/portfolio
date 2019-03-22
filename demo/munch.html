@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Munch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../dist/aos.css" />
+    <link rel="icon" href="logo.png">
+
+
+  <style>
+
+
+    h5, h4, h3, p { cursor: default; }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    .header-background {
+      position:absolute;
+      z-index:-1;
+      top: 0px;
+      left: 50%;
+      margin-left: -750px;
+      width:1500px;
+      height:725px;
+      background-image: url(munch/background.png);
+      background-size: 1500px;
+    }
+
+    .money-book {
+      cursor: default;
+      font-family: 'Lora', serif;
+      font-size:90px;
+      color: white;
+      padding-top: 260px;
+    }
+
+    p {
+      font-size:20px;
+    }
+
+    .explore {
+      color:#e74c27;
+    }
+
+    .vl {
+      border-left: 2px solid #e74c27;
+    }
+
+    h3 {
+      font-size:25px;
+      font-weight:600 !important;
+
+    }
+
+
+     h5 {
+      font-size:18px;
+      font-weight: 400;
+      color:#3F4A54;
+      word-spacing: 1px;
+    }
+
+    .text1 {
+      word-wrap: break-word;
+      width: 1000px;
+    }
+    .text2 {
+      word-wrap: break-word;
+      width: 725px;
+    }
+
+    .center {
+      position:relative;
+      left: 50%;
+      margin-left: -750px;
+      width:1500px;
+      height:725px;
+    }
+
+    #top {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #fbc3a2;
+      color: white;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      padding-top: 5px;
+
+      border-radius: 50%;
+    }
+
+    #top:hover {
+      background-color: #fbc3a2;
+      opacity: 0.8;
+      transition: 0.75s;
+    }
+
+    .footer {
+      float:left;
+      position:relative;
+      left: 50%;
+      transform: translate(-50%);
+      padding: 15px;
+      text-decoration: none;
+    }
+
+    .footer .btn {
+      z-index: 1;
+      border: none;
+      outline: none;
+      color: rgb(251,195,162,0.5);
+      letter-spacing:1.2px;
+      padding-bottom: 10px;
+      background-color: transparent;
+      cursor: pointer;
+      font-size: 25px;
+      border-bottom: 3px solid rgb(255,255,255,0.0);
+    }
+
+    .footer .active {
+      color: #fbc3a2;
+      border-bottom: 3px solid rgb(251,195,162,0.5);
+      transition: 0.75s;
+
+    }
+
+
+    .footer .btn:hover {
+      color: rgb(251,195,162,0.8);
+      border-bottom: 3px solid rgb(251,195,162,0.5);
+      transition: 0.5s;
+    }
+
+    .footer a {
+      padding: 0px;
+    }
+
+    .left {
+      left: 0px;
+    }
+
+
+
+  </style>
+</head>
+
+  <body>
+
+    <button onclick="topFunction()" id="top" title="Go to top"><i class="material-icons">arrow_upward</i>
+</button>
+
+    <div class="header-background"></div>
+    <div class="header">
+      <a href="home.html" class="logo">
+        <img src="logo.png" width="55" alt="logo">
+      </a>
+
+      <div id="nav" class="header-right">
+        <button class="btn active"><a style = "color:rgb(255,255,255,0.9);" href="home.html">Work</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn"><a href="resume.html">Resume</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn"><a href="about.html">About</a></button>
+      </div>
+
+      <div class="money-book"><center> munch </center></div>
+
+            <div class="explore">
+
+              <div data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="600">
+                <br><br>
+
+                <center> <div class ="text1"><h4>Munch is a mobile application that allows users to find recipes based on their dietary restrictions and ingredients they already have available. </h4>
+                <p>learn more</p></div></center>
+                <div class="vl"></div>
+              </div>
+
+              <div data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="700">
+                <br><br><br><br><br><br><br><br>
+                <center>
+                <br>
+                <img src="munch/idea.png" width="40">
+                <br><br>
+                <div class="text2"><h5> Munch focuses on enhancing the recreation of cooking by allowing users to monitor and keep track of the ingredients they have in their kitchen and create meals specifically catered to their dietary needs.
+                  This application is targeted towards busy college students, but can extend to working professionals or individuals that are short on time, want to work on their cooking skills, or have access to recipes that meet their dietary restrictions.
+                  Munch offers a solution of personalized recipes and tracking the shelf life of ingredients to improve users' quality of life.
+                  <br><br>
+                  This project was made in collaboration with Dana Chung and Ruby Tazim.
+               </h5></div>
+                </center>
+            </div>
+
+            <div data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="700">
+              <center>
+                <br><br>
+                <h3> NEEDFINDING </h3>
+                <div class="text2"><h5> After
+                   observing college students and working professionals as they make a meal, we noted what issues or challenges
+                  they have along the way.
+                  <br>
+                  <div class="text2"><h4> INTERVIEWEE 1
+                  </h4></div>
+                  Taherah is a full-time college student that works part-time and is involved in a student organization. Her meal preference is based
+                  on what she's craving, health, and what ingredients she has on hand. She searches for healthy recipes online and checks if she has all
+                  the necessary ingredients. If she doesn't have the correct ingredients than she searches for another recipe. If she unsuccessfully finds
+                  a recipe then she will choose not ot eat or have something instant.
+                  <div class="text2"><h4> INTERVIEWEE 2
+                  </h4></div>
+                  Adrian is working professional that cooks twice a week, one for meal prepping and another if he runs out of meals to eat. He chooses what to cook based
+                  on what he has available in his fridge and priotizes the ingredients that are almost expiring. Adrian usually forgets what he has in his fridge so he makes
+                  sure to check for anything that has gone bad.
+                  <div class="text2"><h4> INTERVIEWEE 3
+                  </h4></div>
+                  Miraya is a full-time college student with a busy schedule. Miraya usually prepares quick and healthy meals with the same ingredients everyday to keep in simple.
+                  When Miraya doesn't have time to cook she usually skips meals or resorts to what snacks she has available.
+                  <div class="text2"><h4> USER NEEDS
+                  </h4></div>
+                  1. Needs a way to quickly know what meal to cook
+                  <br> 2. Needs to avoid unhealthy meals or snacks if they can't figure out what to eat
+                  <br> 3. Needs to track the ingredients they have available as well as their expiration date
+                  <br>
+                  <br>
+                  After observing these challenges, we focused on making cooking meals more efficient and easier by having
+                  ingredient information as well as recipes that meet their preferences more accessible.
+               </h5></div>
+              </center>
+             </div>
+
+             <div data-aos="fade-up"
+               data-aos-easing="linear"
+               data-aos-duration="700">
+               <center>
+                 <br><br>
+                 <h3> DEVELOPMENT </h3>
+                 <div style="height:6px;font-size:1px;">&nbsp;</div>
+
+                 <div class="text2"><h5> After creating a paper prototype and receiving feedback on our functionality we narrowed
+                   down our design to include four main screens that each contributed to a simple yet effective cooking app.
+                   <br>
+                 </h5></div>
+               </center>
+              </div>
+
+              <div data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="700">
+                <center>
+                  <br><br>
+                  <h3> MOBILE APPLICATION </h3>
+                  <div class="text2"><h4> Check out the prototype &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;
+                      <a href= "https://thaotea.github.io/munch/index.html" style = "color: black; padding: 0px; left: 71%;">  here </a>
+                  </h4></div>
+                </center>
+               </div>
+
+              <div data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="700">
+                <center> <br><br> <h3> RECIPES </h3>
+                  <div style="height:6px;font-size:1px;">&nbsp;</div>
+
+                  <img src="munch/munch1.gif" width="375">
+                  <img src="munch/1.png" width="610">
+                </center>
+                  <div style="height:6px;font-size:1px;">&nbsp;</div>
+
+               </div>
+
+               <div data-aos="fade-up"
+                 data-aos-easing="linear"
+                 data-aos-duration="700">
+                 <center>
+                   <br><br>
+                   <h3> INGREDIENTS </h3>
+                   <div style="height:6px;font-size:1px;">&nbsp;</div>
+                   <img src="munch/1.png" width="610">
+                   <img src="munch/munch2.gif" width="375">
+
+                 </center>
+                </div>
+
+                <div data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="700">
+                  <center>
+                    <br><br>
+                    <h3> FAVORITES </h3>
+                    <div style="height:6px;font-size:1px;">&nbsp;</div>
+                    <img src="munch/munch4.png" width="375">
+                    <img src="munch/3.png" width="610">
+
+                  </center>
+                 </div>
+
+                 <div data-aos="fade-up"
+                   data-aos-easing="linear"
+                   data-aos-duration="700">
+                   <center>
+                     <br><br>
+                     <h3> PROFILE </h3>
+                     <div style="height:6px;font-size:1px;">&nbsp;</div>
+                     <img src="munch/4.png" width="610">
+                     <img src="munch/munch5.png" width="375">
+
+                   </center>
+                  </div>
+
+
+
+
+              <br><br>
+
+          <div id="nav" class="footer">
+            <button class="btn"><a href="home.html">All</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn"><a href="planter.html">Planter</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn"><a href="moneybook.html">Moneybook</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn active"><a href="munch.html"  style = "color:#fbc3a2;">Munch</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn"><a href="google.html">Google Calender Redesign</a></button>
+            <br><br>
+          </div>
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+    <script src="../dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+
+    <script>
+    /*
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("nav");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }*/
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("top").style.display = "block";
+      } else {
+        document.getElementById("top").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+  </body>
+</html>
