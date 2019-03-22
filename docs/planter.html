@@ -2,11 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Moneybook</title>
+    <title>Planter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="../dist/aos.css" />
     <link rel="icon" href="logo.png">
@@ -14,14 +13,7 @@
 
   <style>
 
-
     h5, h4, h3, p { cursor: default; }
-
-    *,
-    *:before,
-    *:after {
-      box-sizing: border-box;
-    }
 
     .header-background {
       position:absolute;
@@ -31,15 +23,7 @@
       margin-left: -750px;
       width:1500px;
       height:725px;
-      background-image: url(money-background.png);
-    }
-
-    .money-book {
-      cursor: default;
-      font-family: 'Crimson Text', serif;
-      font-size:75px;
-      color: white;
-      padding-top: 260px;
+      background-image: url(planter-background2.png);
     }
 
     p {
@@ -47,11 +31,11 @@
     }
 
     .explore {
-      color:#799671;
+      color:#dbb546;
     }
 
     .vl {
-      border-left: 2px solid #799671;
+      border-left: 2px solid #dbb546;
     }
 
     h3 {
@@ -83,31 +67,6 @@
       margin-left: -750px;
       width:1500px;
       height:725px;
-    }
-
-    #top {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 30px;
-      z-index: 99;
-      font-size: 18px;
-      border: none;
-      outline: none;
-      background-color: #fbc3a2;
-      color: white;
-      cursor: pointer;
-      width: 50px;
-      height: 50px;
-      padding-top: 5px;
-
-      border-radius: 50%;
-    }
-
-    #top:hover {
-      background-color: #fbc3a2;
-      opacity: 0.8;
-      transition: 0.75s;
     }
 
     .footer {
@@ -146,6 +105,9 @@
       transition: 0.5s;
     }
 
+    .footer a {
+      padding: 0px;
+    }
 
 
 
@@ -159,25 +121,23 @@
 
     <div class="header-background"></div>
     <div class="header">
-      <a href="home.html" class="logo">
+      <a href="index.html" class="logo">
         <img src="logo.png" width="55" alt="logo">
       </a>
 
       <div id="nav" class="header-right">
-        <button class="btn active"><a style = "color:rgb(255,255,255,0.9);" href="home.html">Work</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn active"><a style = "color:rgb(255,255,255,0.9);" href="index.html">Work</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button class="btn"><a href="resume.html">Resume</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button class="btn"><a href="about.html">About</a></button>
       </div>
-
-      <div class="money-book"><center> moneybook </center></div>
-
       <div class="explore">
         <div data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="600">
           <br><br>
 
-          <center> <div class ="text1"><h4>Moneybook is a mobile and web application that simplifies the process of keeping track of your daily expenses. </h4>
+
+          <center> <div class ="text1"><h4>Planter is a mobile application that makes taking care of your plants easier by helping to identify your plant and send reminders for care!</h4>
           <p>learn more</p></div></center>
           <div class="vl"></div>
         </div>
@@ -188,10 +148,8 @@
           <br><br><br><br><br><br><br><br>
           <center>
           <br>
-          <img src="money/idea.png" width="40">
-          <br><br>
-          <div class="text2"><h5> Moneybook makes keeping track of everyday expenses simple and easy. The application allows the user to keep track of their spending in individual categories so they can analyze where
-            they're spending their money. The application features Google Map Charts so the user can physically see and budget their future finacial decisions. The user can adjust the date to see daily, weekly, and monthly spending throughout the year.
+          <img src="planter/idea.png" width="40">
+          <div class="text2"><h5>Planter is an application inspired by my sister who always forgot to water her plants and when she finally remembered, it was too late to save them. Planter helps the user figure out what type of plant it is as well as a short description for the plant's preferences and characteristics. The application has a simple interface that makes adding plants, setting the watering and fertilizing reminders, and checking them off daily quick and easy.
          </h5></div>
        </center>
       </div>
@@ -200,9 +158,10 @@
         data-aos-duration="700">
         <center>
           <br><br>
-          <h3> MOBILE APPLICATION </h3>
-          <br>
-         <img src="money/1.png" width="1200">
+          <h3> NAVIGATION </h3>
+          <div class="text2"><h5> I started off with a plan for Planter's navigation to highlight and plan the application's core functionalities. On the homepage, I planned to include the list of the user's plants, a button for adding plants, and a button for settings. Each plant has a picture, name, checkboxes to check off watering and fertilizing if necessary, and an edit button. When a user wants to add a plant, the user could either identify their plant using the camera or look up the plant in the library. After a brief description of the plant, the user will input the schedule for the plant's watering and fertilizing. In the settings, the user can turn on and off push notifications and learn more about Planter.
+          </h5></div>
+         <img src="planter/navi.png" width="1500">
         </center>
        </div>
 
@@ -211,7 +170,10 @@
          data-aos-duration="700">
          <center>
            <br><br>
-          <img src="money/2.png" width="1200">
+           <h3> BASIC WIREFRAME</h3>
+           <div class="text2"><h5>
+           </h5></div>
+          <img src="planter/basic.png" width="1500">
          </center>
         </div>
 
@@ -220,7 +182,13 @@
           data-aos-duration="700">
           <center>
             <br><br>
-           <img src="money/3.png" width="1200">
+            <h3> LIVE WIREFRAME </h3>
+            <div class="text2"><h4> Add plant by picture
+            </h4></div>
+            <div class="text2"><h5> Using the camera option, the user could take a picture of their plant and Planter will help identify the type of plant and provide basic needs and tips.
+            </h5></div>
+            <div style="height:6px;font-size:1px;">&nbsp;</div>
+           <img src="planter/addplant.gif" width="375">
           </center>
          </div>
 
@@ -229,31 +197,61 @@
            data-aos-duration="700">
            <center>
              <br><br>
-            <img src="money/4.png" width="1200">
+             <div class="text2"><h4> Add plant by library
+             </h4></div>
+             <div class="text2"><h5>  Another option is the utilizing the library to look up plants.
+             </h5></div>
+             <div style="height:6px;font-size:1px;">&nbsp;</div>
+            <img src="planter/addplant2.gif" width="375">
            </center>
           </div>
 
-        <div data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="700">
-          <center>
-            <br><br>
-            <h3> WEB APPLICATION </h3>
-            <div class="text2"><h4> Check out the prototype &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            <a href= "https://thaotea.github.io/moneybook/indexCopy.html" style = "color: black; padding: 0px; left: 72%;">  here </a>
-            </h4></div>
-            <div class="text2"><h5> The web application utilizes the same main features as the mobile application. The single screen design allows for a fast and direct process to utilize Moneybook for tracking expenses, budgeting money, and planing future finacial decisons.
-            </h5> </div>
-            <div style="height:6px;font-size:1px;">&nbsp;</div>
-           <img src="money/web2.gif" width="1300">
-          </center>
-         </div>
+          <div data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="700">
+            <center>
+              <br><br>
+              <div class="text2"><h4> Setting plant's reminders
+              </h4></div>
+              <div class="text2"><h5>  After identifying the plant, the user can set the plant's watering and fertilizing schedule.
+              </h5></div>
+              <div style="height:6px;font-size:1px;">&nbsp;</div>
+             <img src="planter/addplant3.gif" width="375">
+            </center>
+           </div>
 
+           <div data-aos="fade-up"
+             data-aos-easing="linear"
+             data-aos-duration="700">
+             <center>
+               <br><br>
+               <div class="text2"><h4> Check off plants that need care
+               </h4></div>
+               <div class="text2"><h5> The user can easily check off the plants that need to be watered and fertilized.
+               </h5></div>
+               <div style="height:6px;font-size:1px;">&nbsp;</div>
+              <img src="planter/crop.gif" width="375">
+             </center>
+            </div>
+
+            <div data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="700">
+              <center>
+                <br><br>
+                <div class="text2"><h4> Check settings for Planter
+                </h4></div>
+                <div class="text2"><h5> Adjust push notifications, read frequent Q&A, and send feedback.
+                </h5></div>
+                <div style="height:6px;font-size:1px;">&nbsp;</div>
+               <img src="planter/setting.gif" width="375">
+              </center>
+             </div>
              <br><br>
          <div id="nav" class="footer">
-           <button class="btn"><a href="home.html">All</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <button class="btn"><a href="planter.html">Planter</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <button class="btn active"><a href="moneybook.html"  style = "color:#fbc3a2;">Moneybook</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <button class="btn"><a href="index.html">All</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <button class="btn active"><a href="planter.html" style = "color:#fbc3a2; ">Planter</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <button class="btn"><a href="moneybook.html">Moneybook</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
            <button class="btn"><a href="munch.html">Munch</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
            <button class="btn"><a href="google.html">Google Calender Redesign</a></button>
            <br><br>
