@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Moneybook</title>
+    <title>Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="../dist/aos.css" />
+    <link rel="stylesheet" href="dist/aos.css" />
     <link rel="icon" href="logo.png">
 
 
@@ -26,19 +25,21 @@
 
     .header-background {
       position:absolute;
-      z-index:-1;
       top: 0px;
       left: 50%;
       margin-left: -750px;
       width:1500px;
-      height:725px;
-      background-image: url(money-background.png);
+      height:180px;
+      background-image: linear-gradient(to right bottom, #ffafbd, #ffb3b4, #ffb7ac, #ffbda5, #ffc3a0);
+      background-size: 1500px;
+
+
     }
 
     .money-book {
       cursor: default;
-      font-family: 'Crimson Text', serif;
-      font-size:75px;
+      font-family: 'Lora', serif;
+      font-size:90px;
       color: white;
       padding-top: 260px;
     }
@@ -48,11 +49,13 @@
     }
 
     .explore {
-      color:#799671;
+      z-index:-2;
+      top: 0px;
+      color:#5778ba;
     }
 
     .vl {
-      border-left: 2px solid #799671;
+      border-left: 2px solid #5778ba;
     }
 
     h3 {
@@ -161,115 +164,29 @@
     <div class="header-background"></div>
     <div class="header">
       <a href="index.html" class="logo">
+        <br>
         <img src="logo.png" width="55" alt="logo">
       </a>
 
       <div id="nav" class="header-right">
-        <button class="btn active"><a style = "color:rgb(255,255,255,0.9);" href="index.html">Work</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="btn"><a href="resume.html">Resume</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn"><a href="index.html">Work</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn active"><a  style = "color:rgb(255,255,255,0.9); href="resume.html">Resume</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button class="btn"><a href="about.html">About</a></button>
       </div>
-
-      <div class="money-book"><center> moneybook </center></div>
 
       <div class="explore">
         <div data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="600">
-          <br><br>
+          <img src="resume.png" width="1250">
 
-          <center> <div class ="text1"><h4>Moneybook is a mobile and web application that simplifies the process of keeping track of your daily expenses. </h4>
-          <p>learn more</p></div></center>
-          <div class="vl"></div>
         </div>
-
-        <div data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="700">
-          <br><br><br><br><br><br><br><br>
-          <center>
-          <br>
-          <img src="money/idea.png" width="40">
-          <br><br>
-          <div class="text2"><h5> Moneybook makes keeping track of everyday expenses simple and easy. The application allows the user to keep track of their spending in individual categories so they can analyze where
-            they're spending their money. The application features Google Map Charts so the user can physically see and budget their future finacial decisions. The user can adjust the date to see daily, weekly, and monthly spending throughout the year.
-         </h5></div>
-       </center>
-      </div>
-      <div data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="700">
-        <center>
-          <br><br>
-          <h3> MOBILE APPLICATION </h3>
-          <br>
-         <img src="money/1.png" width="1200">
-        </center>
-       </div>
-
-       <div data-aos="fade-up"
-         data-aos-easing="linear"
-         data-aos-duration="700">
-         <center>
-           <br><br>
-          <img src="money/2.png" width="1200">
-         </center>
-        </div>
-
-        <div data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="700">
-          <center>
-            <br><br>
-           <img src="money/3.png" width="1200">
-          </center>
-         </div>
-
-         <div data-aos="fade-up"
-           data-aos-easing="linear"
-           data-aos-duration="700">
-           <center>
-             <br><br>
-            <img src="money/4.png" width="1200">
-           </center>
-          </div>
-
-        <div data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="700">
-          <center>
-            <br><br>
-            <h3> WEB APPLICATION </h3>
-            <div class="text2"><h4> Check out the prototype &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            <a href= "https://thaotea.github.io/moneybook/indexCopy.html" style = "color: black; padding: 0px; left: 72%;">  here </a>
-            </h4></div>
-            <div class="text2"><h5> The web application utilizes the same main features as the mobile application. The single screen design allows for a fast and direct process to utilize Moneybook for tracking expenses, budgeting money, and planing future finacial decisons.
-            </h5> </div>
-            <div style="height:6px;font-size:1px;">&nbsp;</div>
-           <img src="money/web2.gif" width="1300">
-          </center>
-         </div>
-
-             <br><br>
-         <div id="nav" class="footer">
-           <button class="btn"><a href="index.html">All</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <button class="btn"><a href="planter.html">Planter</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <button class="btn active"><a href="moneybook.html"  style = "color:#fbc3a2;">Moneybook</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <button class="btn"><a href="munch.html">Munch</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <button class="btn"><a href="google.html">Google Calender Redesign</a></button>
-           <br><br>
-         </div>
-
-
-
-
-      </div>
     </div>
 
 
 
 
-    <script src="../dist/aos.js"></script>
+    <script src="dist/aos.js"></script>
     <script>
       AOS.init({
         easing: 'ease-in-out-sine'
