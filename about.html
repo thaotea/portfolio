@@ -4,54 +4,77 @@
 <head>
   <meta charset="UTF-8">
   <title>About</title>
-  <link rel="stylesheet" href="css/aboutstyle.css">
   <link rel="icon" href="logo.png">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<style>
+
+body {
+  color: white;
+}
+
+.header-background {
+  position:absolute;
+  z-index: -1;
+  width:100%;
+  height:100%;
+  background-image: linear-gradient(to right bottom, #ffafbd, #ffb3b4, #ffb7ac, #ffbda5, #ffc3a0);
+}
+
+.profile {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+
+.text {
+  position: absolute;
+  top: 400px;
+  width: 700px;
+  left: -30%;
+  letter-spacing: .75px;
+  text-shadow: #dd8c9f 1.5px 1.5px;
+  cursor: default;
+
+}
+
+.text2 {
+  position: absolute;
+  top: 392px;
+  font-family: 'Raleway', serif;
+  font-size:30px;
+  text-align: right;
+  left: -80%;
+  text-shadow: #dd8c9f 2px 2px;
+  cursor: default;
+}
+
+.fa {
+  padding: 20px 22px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 3px;
+  border-radius: 50%;
+  background: white;
+  color: #ffbba7;
+  box-shadow: #dd8c9f 2px 2px;
+}
+
+
+.fa:hover {
+  opacity: 0.9;
+}
+
+
+</style>
 
 <body>
-  <!---
-
-  <div class="anim-float">
-    <div class="shape-1 base-rotate--30">
-      <div class="shape-bg shape-bg-blue-light anim-rotate"></div>
-    </div>
-  </div>
-
-  <div class="anim-float">
-    <div class="shape-2 base-rotate-45">
-      <div class="shape-bg shape-bg-blue-mid anim-rotate"></div>
-    </div>
-  </div>
-
-
-  <div class="anim-float">
-    <div class="shape-3 base-rotate--45">
-      <div class="shape-bg  shape-bg-manatee-dark anim-rotate"></div>
-    </div>
-  </div>
-
-  <div class="anim-float">
-    <div class="shape-4 base-rotate-80">
-      <div class="shape-bg shape-bg-blue-mid anim-rotate"></div>
-    </div>
-  </div>
-
-  <div class="anim-float">
-    <div class="shape-5 base-rotate-30">
-      <div class="shape-bg shape-bg-manatee-light anim-rotate"></div>
-    </div>
-  </div>
-
-
-    <div class="anim-float">
-      <div class="shape-6 base-rotate-30">
-        <div class="shape-bg shape-bg-blue-dark anim-rotate"></div>
-      </div>
-    </div>
--->
-<div class = "header-background"> </div>
+    <div class="header-background"></div>
     <div class="header">
       <a href="index.html" class="logo">
         <br>
@@ -63,13 +86,12 @@
         <button class="btn"><a href="resume.html">Resume</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button class="btn active"><a  style = "color:rgb(255,255,255,0.9);" href="about.html">About</a></button>
       </div>
-</div></div>
-      <br><br><br><br><br><br><br><br>
+    </div>
+      <br><br><br><br><br><br><br>
       <div class ="profile">  <img src="profile.png" width="350">
       <div class = text2> a<br>little<br> about me</div>
       <div class = "text">
 Hi! My name is Thao and I'm a 4th year Cognitive Science design student at UCSD. My inspiration for creating comes from the world around me. I love designing and programming to offer practical and unique solutions to problems in order to improve the way we live with technology. When I'm not at my computer, you can find me at a dessert shop or restaurant that I found on Yelp, cooking at home, or exploring San Diego!
-
       </div>
       <br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -80,9 +102,6 @@ Hi! My name is Thao and I'm a 4th year Cognitive Science design student at UCSD.
     </center>
   </div>
 
-
-
-<div class="shape-wrapper">
 
 </body>
 

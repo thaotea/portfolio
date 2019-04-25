@@ -1,0 +1,32 @@
+p {
+  font-size:18px;
+}
+
+h3 {
+  font-size:25px;
+  font-weight:600 !important;
+}
+
+ h5 {
+  font-size:18px;
+  font-weight: 400;
+  color:#3F4A54;
+  word-spacing: 1px;
+}
+
+.text1 {
+  word-wrap: break-word;
+  width: 1000px;
+}
+.text2 {
+  word-wrap: break-word;
+  width: 725px;
+}
+
+.center {
+  position:relative;
+  left: 50%;
+  margin-left: -750px;
+  width:1500px;
+  height:725px;
+}
