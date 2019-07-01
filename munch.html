@@ -2,272 +2,313 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Munch</title>
-    <link rel="icon" href="logo.png">
+
+    <title>Munch ✦ Thao Nguyen</title>
+    <link rel="icon" href="logo3.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/projectstyles.css" />
-
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="dist/aos.css" />
+    <link rel ="stylesheet" href="css/logostyle.css">
+    <link rel ="stylesheet" href="css/projectstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"  media="only screen and (max-width: 900px), only screen and (max-device-width: 900px)" href="css/mobile.css" />
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="css/animsition.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition.js -->
+    <script src="js/animsition.js"></script>
 
-
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
   <style>
-
-    .header-background {
-      background-size: cover;
-      height:730px;
-      background-image: url(munch/background.png);
+    .block {
+      background-color:#5c8ab1;
     }
-
-    .munch-title {
-      cursor: default;
-      font-family: 'Lora', serif;
-      font-size:90px;
-      color: white;
-      padding-top: 260px;
-    }
-
-
-    .explore {
-      color:#e74c27;
-    }
-
-    .vl {
-      border-left: 2px solid #e74c27;
-    }
-
-    .left {
-      left: 0px;
-    }
-
-    .text2 a {
-      font-family: 'Raleway', sans-serif;
-      font-size:25px;
-      font-weight:500 !important;
-      letter-spacing:1px;
-    }
-
-
-
   </style>
-</head>
 
   <body>
 
-    <button onclick="topFunction()" id="top" title="Go to top"><i class="material-icons">arrow_upward</i>
-</button>
+  <div class="animsition">
 
-    <div class="header-background"></div>
-    <div class="header">
-      <a href="index.html" class="logo">
-        <img src="logo.png" width="55" alt="logo">
-      </a>
+      <!-- scroll button -->
+      <button onclick="topFunction()" id="top" title="Go to top"><i class="material-icons">arrow_upward</i></button>
 
-      <div id="nav" class="header-right">
-        <button class="btn active"><a style = "color:rgb(255,255,255,0.9);" href="home.html">Work</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="btn"><a href="resume.html">Resume</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="btn"><a href="about.html">About</a></button>
+      <!-- header -->
+      <div id="munch-background" class="header-background"></div>
+      <div class="header">
+        <div class="headerNav">
+          <a href="/" class="logo">
+            <br>
+            <!--<img src="logo.png" width="55" alt="logo">-->
+            <svg id="logo" width="50" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 308.74">
+            <defs>
+
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #e2533c;
+                  stroke-miterlimit: 10;
+                  stroke-width: 4px;
+                }
+              </style>
+            </defs>
+
+
+            <title></title>
+            <path class="cls-1" d="M207,132.53l-25.74,11.41s.11,170.43,0,189.94L207,322.47S206.94,140.89,207,132.53Z" transform="translate(-81 -26.68)"/>
+            <path class="cls-1" d="M242.85,131.89c-22-3-34.89,25.06-35.75,28.84s8.26-25.32,23.86-24.4c7.48.44,11.4,8.24,11.43,22.14-.29,48.78.16,99.27-.13,148L268,295.12v-130C267.22,147.11,258.22,134,242.85,131.89Z" transform="translate(-81 -26.68)"/>
+            <path class="cls-1" d="M196,39.91l-43.41,18q0-14.94.09-29.73L127,39.6V67.78L82,86.63v6.31l45-18.6v94.93c.78,18,14.86,31.74,30.32,32.07,12.22,2.1,23.65-10.67,23.93-15,.66,3.55-9.49,14.56-15.55,12.77-7.17-2.11-13.11-9.33-13.14-23.2.22-36.74,0-74.46,0-111.67L196,46.4Z" transform="translate(-81 -26.68)"/>
+          </svg>
+        </a>
+
+
+
+        <div id="nav" class="header-right">
+          <button class="btn active"><a href="/#work"><span>WORK</span></a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="btn"><a href="resume.html"><span>RESUME</span></a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="btn"><a href="about.html"><span>ABOUT</span></a></button>
+        </div>
       </div>
-
-      <div class="munch-title"><center> munch </center></div>
-
-            <div class="explore">
-
-              <div data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-duration="600">
-                <br><br>
-
-                <center> <div class ="text1"><h4>Munch is a mobile application that allows users to find recipes based on their dietary restrictions and ingredients they already have available. </h4>
-                <p>learn more</p></div></center>
-                <div class="vl"></div>
-              </div>
-
-              <div data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-duration="700">
-                <br><br><br><br><br><br><br><br>
-                <center>
-                <br>
-                <img src="munch/idea.png" width="40">
-                <br><br>
-                <div class="text2"><h5> Munch focuses on enhancing the recreation of cooking by allowing users to monitor and keep track of the ingredients they have in their kitchen and create meals specifically catered to their dietary needs.
-                  This application is targeted towards busy college students, but can extend to working professionals or individuals that are short on time, want to work on their cooking skills, or have access to recipes that meet their dietary restrictions.
-                  Munch offers a solution of personalized recipes and tracking the shelf life of ingredients to improve users' quality of life.
-                  <br><br>
-                  This project was made in collaboration with Dana Chung and Ruby Tazim.
-               </h5></div>
-                </center>
-            </div>
-
-            <div data-aos="fade-up"
-              data-aos-easing="linear"
-              data-aos-duration="700">
-              <center>
-                <br><br>
-                <h3> NEEDFINDING </h3>
-                <div class="text2"><h5> After
-                   observing college students and working professionals as they make a meal, we noted what issues or challenges
-                  they have along the way.
-                  <br>
-                  <div class="text2"><h4> INTERVIEWEE 1
-                  </h4></div>
-                  Taherah is a full-time college student that works part-time and is involved in a student organization. Her meal preference is based
-                  on what she's craving, health, and what ingredients she has on hand. She searches for healthy recipes online and checks if she has all
-                  the necessary ingredients. If she doesn't have the correct ingredients than she searches for another recipe. If she unsuccessfully finds
-                  a recipe then she will choose not ot eat or have something instant.
-                  <div class="text2"><h4> INTERVIEWEE 2
-                  </h4></div>
-                  Adrian is working professional that cooks twice a week, one for meal prepping and another if he runs out of meals to eat. He chooses what to cook based
-                  on what he has available in his fridge and priotizes the ingredients that are almost expiring. Adrian usually forgets what he has in his fridge so he makes
-                  sure to check for anything that has gone bad.
-                  <div class="text2"><h4> INTERVIEWEE 3
-                  </h4></div>
-                  Miraya is a full-time college student with a busy schedule. Miraya usually prepares quick and healthy meals with the same ingredients everyday to keep in simple.
-                  When Miraya doesn't have time to cook she usually skips meals or resorts to what snacks she has available.
-                  <div class="text2"><h4> USER NEEDS
-                  </h4></div>
-                  1. Needs a way to quickly know what meal to cook
-                  <br> 2. Needs to avoid unhealthy meals or snacks if they can't figure out what to eat
-                  <br> 3. Needs to track the ingredients they have available as well as their expiration date
-                  <br>
-                  <br>
-                  After observing these challenges, we focused on making cooking meals more efficient and easier by having
-                  ingredient information as well as recipes that meet their preferences more accessible.
-               </h5></div>
-              </center>
-             </div>
-
-             <div data-aos="fade-up"
-               data-aos-easing="linear"
-               data-aos-duration="700">
-               <center>
-                 <br><br>
-                 <h3> STORYBOARDING </h3>
-                 <div style="height:6px;font-size:1px;">&nbsp;</div>
-                 <img src="munch/storyboard.png" width="1250">
-               </center>
-              </div>
-
-              <div data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-duration="700">
-                <center>
-                  <br><br>
-                  <h3> PAPER PROTOTYPE </h3>
-                  <div style="height:6px;font-size:1px;">&nbsp;</div>
-                  <img src="munch/paper.png" width="1250">
-                </center>
-               </div>
-
-             <div data-aos="fade-up"
-               data-aos-easing="linear"
-               data-aos-duration="700">
-               <center>
-                 <br><br>
-                 <h3> DEVELOPMENT </h3>
-                 <div style="height:6px;font-size:1px;">&nbsp;</div>
-
-                 <div class="text2"><h5> After creating a paper prototype and receiving feedback on our functionality we narrowed
-                   down our design to include four main screens that each contributed to a simple yet effective cooking app.
-                   <br>
-                 </h5></div>
-               </center>
-              </div>
-
-              <div data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-duration="700">
-                <center>
-                  <br><br>
-                  <h3> MOBILE APPLICATION </h3>
-                  <div class="text2"><h4> Check out the prototype &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;
-                      <a href= "https://thaotea.github.io/munch/index.html" style = "color: black; padding: 0px; left: 71%;">  here </a>
-                  </h4></div>
-                </center>
-               </div>
-
-              <div data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-duration="700">
-                <center> <br><br> <h3> RECIPES </h3>
-                  <div style="height:6px;font-size:1px;">&nbsp;</div>
-
-                  <img src="munch/munch1.gif" width="375">
-                  <img src="munch/1.png" width="610">
-                </center>
-                  <div style="height:6px;font-size:1px;">&nbsp;</div>
-
-               </div>
-
-               <div data-aos="fade-up"
-                 data-aos-easing="linear"
-                 data-aos-duration="700">
-                 <center>
-                   <br><br>
-                   <h3> INGREDIENTS </h3>
-                   <div style="height:6px;font-size:1px;">&nbsp;</div>
-                   <img src="munch/1.png" width="610">
-                   <img src="munch/munch2.gif" width="375">
-
-                 </center>
-                </div>
-
-                <div data-aos="fade-up"
-                  data-aos-easing="linear"
-                  data-aos-duration="700">
-                  <center>
-                    <br><br>
-                    <h3> FAVORITES </h3>
-                    <div style="height:6px;font-size:1px;">&nbsp;</div>
-                    <img src="munch/munch4.png" width="375">
-                    <img src="munch/3.png" width="610">
-
-                  </center>
-                 </div>
-
-                 <div data-aos="fade-up"
-                   data-aos-easing="linear"
-                   data-aos-duration="700">
-                   <center>
-                     <br><br>
-                     <h3> PROFILE </h3>
-                     <div style="height:6px;font-size:1px;">&nbsp;</div>
-                     <img src="munch/4.png" width="610">
-                     <img src="munch/munch5.png" width="375">
-
-                   </center>
-                  </div>
+    </div>
 
 
-
-
-              <br><br>
-
-          <div id="nav" class="footer">
-            <button class="btn"><a href="home.html">All</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="btn"><a href="planter.html">Planter</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="btn"><a href="moneybook.html">Moneybook</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="btn active"><a href="munch.html"  style = "color:#fbc3a2;">Munch</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="btn"><a href="google.html">Google Calender Redesign</a></button>
-            <br><br>
+    <div class="block">
+      <div class="l">
+        <p class ="title"> PROJECT </p>
+        <p> Munch </p>
+        <p class ="title"> MY ROLE </p>
+        <p> UI Designer <br> UX Designer <br> Front-end Developer </p>
+      </div>
+      <div class="r">
+        <p class ="title"> SUMMARY </p>
+        <p class ="large"> I designed and developed a personalized recipe app and
+          ingredient tracker to make cooking at home efficient and easy. </p>
+          <a href= "https://thaotea.github.io/munch/index.html">
+            <div class="button button-one">
+            <span>MOBILE DEMO</span>
           </div>
+        </a>
+      </div>
+    </div>
+    <div data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="400">
+      <center><img id="image" style="width:350px"src="munch/munchgif3.gif"></center>
+   </div>
 
 
+   <div data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="400">
+      <div class="text">
+        <div class="l">
+          <p class ="title"> PROBLEM STATEMENT </p>
+        </div>
+        <div class="r">
+          <p>  Munch is targeted towards college students and working professionals
+            who often have difficulties deciding what to eat for their next meal due to a busy schedule.
+            The app aims to enhance the recreation of cooking by allowing users to
+            efficiently search recipes specifically catered to their needs including
+            time and dietary restrictions. Users can also monitor and keep
+            track of the ingredients they have in their kitchen in order to promote
+            consumption and reduce food waste.
 
+
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="400">
+      <div class="text" style="height:1100px;">
+        <div class="l">
+          <p class ="title"> NEEDFINDING </p>
+        </div>
+        <div class="r">
+          <p> While observing college students and working professionals as they
+            prepare a meal, we noted what issues or challenges
+            they have along the way.
+          <p class ="number"> &nbsp;I </p>
+            <p>           Taherah is a full-time college student that works part-time and is involved in a student organization. Her meal preference is based
+                      on what she's craving, health, and what ingredients she has on hand. She searches for healthy recipes online and checks if she has all
+                      the necessary ingredients. If she doesn't have the correct ingredients than she searches for another recipe. If she unsuccessfully finds
+                      a recipe then she will choose not ot eat or have something instant.
+            </map>  </p>
+          <p class ="number">  &nbsp;II </p>
+            <p>   Adrian is working professional that cooks twice a week, one for meal prepping and another if he runs out of meals to eat. He chooses what to cook based
+              on what he has available in his fridge and priotizes the ingredients that are almost expiring. Adrian usually forgets what he has in his fridge so he makes
+              sure to check for anything that has gone bad. </p>
+          <p class ="number"> &nbsp;III </p>
+            <p>       Miraya is a full-time college student with a busy schedule. Miraya usually prepares quick and healthy meals with the same ingredients everyday to keep in simple.
+                  When Miraya doesn't have time to cook she usually skips meals or resorts to what snacks she has available. </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="400">
+      <div class="text"style="height:700px;">
+        <div class="l">
+          <p class ="title"> USER NEEDS </p>
+        </div>
+        <div class="r">
+          <p class ="number"> &nbsp;I </p>
+            <p>   A way to quickly plan their next meal to cook. </p>
+          <p class ="number">  &nbsp;II </p>
+            <p>  Avoid unhealthy instant meals or snacks by having accessible recipes.  </p>
+          <p class ="number"> &nbsp;III </p>
+            <p>   Track the ingredients they have available as well as their expiration date.</p>
+            <br>
+            <p>After observing these challenges, we focused on making cooking meals more efficient and easier by having
+            ingredient information as well as recipes that meet their preferences more accessible. </p>
+        </div>
+      </div>
+    </div>
+
+    <div data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="400">
+      <div class="text" style="height:800px;">
+
+        <div class="l">
+          <p class ="title"> STORYBOARDING  </p>
+        </div>
+        <img id="image" style="padding-top:180px"src="munch/storyboard.png">
 
 
       </div>
     </div>
 
+    <div data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="400">
+      <div class="text" style="height:700px;">
+
+        <div class="l">
+          <p class ="title"> PAPER PROTOTYPE  </p>
+        </div>
+        <img id="image" style="padding-top:150px"src="munch/paper.png">
+
+
+      </div>
+    </div>
+
+    <div data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="400">
+      <div class="text">
+
+        <div class="l">
+          <p class ="title"> DEVELOPMENT </p>
+        </div>
+        <div class="r"> <p>
+          After creating a paper prototype and receiving feedback through heuristic evaluations on
+          the functionality, we scratched the idea of a website and narrowed down our idea to
+          four main mobile screens that each contributed to a simple yet effective cooking app.
+          </p>
+         </div>
+
+
+      </div>
+    </div>
+
+    <div data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="400">
+      <div id="title" class="text">
+        <div class="l">
+          <p class ="title"> SCREEN DESIGNS <br> HOME, INGREDIENTS, FAVORITES, PROFILE  </p>
+        </div>
+      </div>
+    <center><img id="image" style="width:100%;padding-top:110px;"src="munch/screens.png"></center>
+    </div>
+
+    <div data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="400">
+      <div class="text" style="height:850px;">
+
+        <div class="l">
+          <p class ="title"> OVERVIEW</p>
+        </div>
+        <div class="r"> <p>
+          Browse and search for all the recipes Munch has to offer on the home page.
+          The recipes can be filtered by the user's dietary restrictions or preferences.
+          Recipes offer nutritional facts for each serving and be saved for later
+          by adding to favorites. <br><br>
+          After at trip to the grocery store, add all the ingredients you bought to
+          your Munch app to easily track expiration dates. Turn on push notifications
+          to get notifciations for when food is about to expire. This allows for a reduction
+          of food waste as well as simplifying the cooking process by tracking expiration
+          dates and having recipes that utilize ingredients that you already have.<br><br>
+          When you're making a grocery run or when you're about to cook a quick meal
+          at home, favorites allows you to have easy access to all the recipes
+          you have favorited. <br><br>
+          In the profile, you can toggle push notifcations for ingredients that are
+          about to expire. All the recipes shown is based on user's checked
+          dietary restrictions. For any questions, check out frequent Q&A to
+          learn more about the Munch app. <br><br>
+          To imitate a backend, local storage was implemnted for features
+          such as adding recipes to favorites and adding ingredients.
+         </div>
+
+      </div>
+    </div>
+
+    <div data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="400">
+    <div class="text">
+      <div class="l">
+        <p class ="title"> ENDING NOTES </p>
+      </div>
+      <div class="r">
+        <p>Through this three month long project, I gained hands-on experience
+        conducting user research, designing, and developing in collaboration with two
+        other individuals, Dana Chung and Ruby Tazim.
+        I strengthened my skills as a UX designer through development of our
+        idea through the design process and testing our iterations to create a
+        functioning app. In addition, I was able to strengthen my HTML, CSS, and
+        JavaScript skills as well as learn how to utilize local storage to
+        simulate a backend server.
+        </p>
+
+      </div>
+    </div>
+  </div>
 
 
 
 
+<div class = "footer">
+    <nav>
+      <a href="/#work">ALL</a>
+      <a href="trace.html">TRACE</a>
+      <div class="strike">MUNCH</div>
+      <a href="moneybook.html">MONEYBOOK</a>
+      <a href="planter.html">PLANTER</a>
+      <a href="food.html">FOOD LOCKER</a>
+      <a href="google.html">GOOGLE CALENDAR REDESIGN</a>
+      <br><br>
+    <nav>
+</div>
+
+  </div>
     <script src="dist/aos.js"></script>
+    <script src="javascript/logo.js"></script>
+    <script src="javascript/type.js"></script>
+    <script src="javascript/animsition.js"></script>
+
+
     <script>
       AOS.init({
         easing: 'ease-in-out-sine'
@@ -275,18 +316,6 @@
     </script>
 
     <script>
-    /*
-    // Add active class to the current button (highlight it)
-    var header = document.getElementById("nav");
-    var btns = header.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-      });
-    }*/
-
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
 
@@ -303,6 +332,33 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+    </script>
+
+    <script>
+    $(document).ready(function() {
+      $(".animsition").animsition({
+        inClass: 'fade-in-up-sm',
+        outClass: 'fade-out-up-sm',
+        inDuration: 1500,
+        outDuration: 800,
+        linkElement: '.animsition-link',
+        // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+        loading: true,
+        loadingParentElement: 'body', //animsition wrapper element
+        loadingClass: 'animsition-loading',
+        loadingInner: '', // e.g '<img src="loading.svg" />'
+        timeout: false,
+        timeoutCountdown: 5000,
+        onLoadEvent: true,
+        browser: [ 'animation-duration', '-webkit-animation-duration'],
+        // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        overlay : false,
+        overlayClass : 'animsition-overlay-slide',
+        overlayParentElement : 'body',
+        transition: function(url){ window.location.href = url; }
+      });
+    });
     </script>
   </body>
 </html>

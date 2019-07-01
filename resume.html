@@ -2,68 +2,94 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Resume</title>
-    <link rel="icon" href="logo.png">
+
+    <title>Resume ✦ Thao Nguyen</title>
+    <link rel="icon" href="logo3.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="dist/aos.css" />
+    <link rel ="stylesheet" href="css/logostyle.css">
+    <link rel ="stylesheet" href="css/projectstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"  media="only screen and (max-width: 900px), only screen and (max-device-width: 900px)" href="css/mobile.css" />
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="css/animsition.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition.js -->
+    <script src="js/animsition.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
   <style>
-
-    *,
-    *:before,
-    *:after {
-      box-sizing: border-box;
+    .block {
+      background-color:#335aa3;
     }
-
-    .header-background {
-      width:100%;
-      height:180px;
-      background-image: linear-gradient(to right bottom, #ffafbd, #ffb3b4, #ffb7ac, #ffbda5, #ffc3a0);
-    }
-
-    .resume {
-      position:relative;
-      z-index:-2;
-    }
-
-
   </style>
-</head>
 
   <body>
 
-    <button onclick="topFunction()" id="top" title="Go to top"><i class="material-icons">arrow_upward</i></button>
+  <div class="animsition">
 
-    <div class="header-background"></div>
-    <div class="header">
-      <a href="index.html" class="logo">
-        <br>
-        <img src="logo.png" width="55" alt="logo">
-      </a>
+      <!-- scroll button -->
+      <button onclick="topFunction()" id="top" title="Go to top"><i class="material-icons">arrow_upward</i></button>
 
-      <div id="nav" class="header-right">
-        <button class="btn"><a href="index.html">Work</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="btn active"><a style = "color:rgb(255,255,255,0.9);" href="resume.html">Resume</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="btn"><a href="about.html">About</a></button>
-      </div>
+      <!-- header -->
+      <div class="header">
+        <div class="headerNav">
+          <a href="/" class="logo">
+            <br>
+            <!--<img src="logo.png" width="55" alt="logo">-->
+            <svg id="logo" width="50" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 308.74">
+            <defs>
+
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #e2533c;
+                  stroke-miterlimit: 10;
+                  stroke-width: 4px;
+                }
+              </style>
+            </defs>
 
 
-      <div class = "resume">
-      <div data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="600">
-        <br><br><br><br><br>
-        <center><img src="resume.png" width="800"></center>
+            <title></title>
+            <path class="cls-1" d="M207,132.53l-25.74,11.41s.11,170.43,0,189.94L207,322.47S206.94,140.89,207,132.53Z" transform="translate(-81 -26.68)"/>
+            <path class="cls-1" d="M242.85,131.89c-22-3-34.89,25.06-35.75,28.84s8.26-25.32,23.86-24.4c7.48.44,11.4,8.24,11.43,22.14-.29,48.78.16,99.27-.13,148L268,295.12v-130C267.22,147.11,258.22,134,242.85,131.89Z" transform="translate(-81 -26.68)"/>
+            <path class="cls-1" d="M196,39.91l-43.41,18q0-14.94.09-29.73L127,39.6V67.78L82,86.63v6.31l45-18.6v94.93c.78,18,14.86,31.74,30.32,32.07,12.22,2.1,23.65-10.67,23.93-15,.66,3.55-9.49,14.56-15.55,12.77-7.17-2.11-13.11-9.33-13.14-23.2.22-36.74,0-74.46,0-111.67L196,46.4Z" transform="translate(-81 -26.68)"/>
+          </svg>
+        </a>
+
+
+
+        <div id="nav" class="header-right">
+          <button class="btn active"><a href="index.html"><span>WORK</span></a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="btn"><a href="resume.html"><div class="strike">RESUME</div></a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="btn"><a href="about.html"><span>ABOUT</span></a></button>
+        </div>
       </div>
     </div>
 
 
+    <div data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="400">
+      <center><img id="image" style="width:1100px;padding-top:60px;"src="portfolio.png"></center>
+    </div>
 
 
+
+  </div>
     <script src="dist/aos.js"></script>
+    <script src="javascript/logo.js"></script>
+    <script src="javascript/type.js"></script>
+    <script src="javascript/animsition.js"></script>
+
+
     <script>
       AOS.init({
         easing: 'ease-in-out-sine'
@@ -87,6 +113,33 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+    </script>
+
+    <script>
+    $(document).ready(function() {
+      $(".animsition").animsition({
+        inClass: 'fade-in-up-sm',
+        outClass: 'fade-out-up-sm',
+        inDuration: 1500,
+        outDuration: 800,
+        linkElement: '.animsition-link',
+        // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+        loading: true,
+        loadingParentElement: 'body', //animsition wrapper element
+        loadingClass: 'animsition-loading',
+        loadingInner: '', // e.g '<img src="loading.svg" />'
+        timeout: false,
+        timeoutCountdown: 5000,
+        onLoadEvent: true,
+        browser: [ 'animation-duration', '-webkit-animation-duration'],
+        // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        overlay : false,
+        overlayClass : 'animsition-overlay-slide',
+        overlayParentElement : 'body',
+        transition: function(url){ window.location.href = url; }
+      });
+    });
     </script>
   </body>
 </html>

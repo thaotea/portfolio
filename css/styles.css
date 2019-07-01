@@ -18,6 +18,8 @@ h5, h4, h3, p { cursor: default; }
   box-sizing: border-box;
 }
 
+
+
 .header-background {
   position: absolute;
   z-index:-1;
@@ -76,20 +78,7 @@ h5, h4, h3, p { cursor: default; }
 .header a:hover {
   color: rgb(255,255,255);
 }
-/*
 
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-  .header-right {
-    float: none;
-  }
-}
-*/
 .body {
   position: absolute;
   top: 275px;
@@ -132,13 +121,7 @@ h5, h4, h3, p { cursor: default; }
   margin-right: auto;
  }
 
-/*
-@media screen and (max-width: 800px) {
-  .aos-item {
-    width: 78.8%;
-  }
-}
-*/
+
 
 
 .parent {

@@ -2,186 +2,275 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Planter</title>
-    <link rel="icon" href="logo.png">
+
+    <title>Planter ✦ Thao Nguyen</title>
+    <link rel="icon" href="logo3.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="stylesheet" href="css/projectstyles.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="dist/aos.css" />
+    <link rel ="stylesheet" href="css/logostyle.css">
+    <link rel ="stylesheet" href="css/projectstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"  media="only screen and (max-width: 900px), only screen and (max-device-width: 900px)" href="css/mobile.css" />
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="css/animsition.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition.js -->
+    <script src="js/animsition.js"></script>
 
-
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
   <style>
-
-    .header-background {
-      background-size: cover;
-      background-image: url(planter-test.png);
+    .block {
+      background-color:#d98659;
     }
-
-    .explore {
-      color:#dbb546;
-    }
-
-    .vl {
-      border-left: 2px solid #dbb546;
-    }
-
-
-
   </style>
-</head>
 
   <body>
 
-    <button onclick="topFunction()" id="top" title="Go to top"><i class="material-icons">arrow_upward</i>
-</button>
+  <div class="animsition">
 
-    <div class="header-background"></div>
-    <div class="header">
-      <a href="index.html" class="logo">
-        <img src="logo.png" width="55" alt="logo">
-      </a>
+      <!-- scroll button -->
+      <button onclick="topFunction()" id="top" title="Go to top"><i class="material-icons">arrow_upward</i></button>
 
-      <div id="nav" class="header-right">
-        <button class="btn active"><a style = "color:rgb(255,255,255,0.9);" href="index.html">Work</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="btn"><a href="resume.html">Resume</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="btn"><a href="about.html">About</a></button>
-      </div>
-      <div class="explore">
-        <div data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="600">
-          <br><br>
+      <!-- header -->
+      <div id="planter-background" class="header-background"></div>
+      <div class="header">
+        <div class="headerNav">
+          <a href="/" class="logo">
+            <br>
+            <!--<img src="logo.png" width="55" alt="logo">-->
+            <svg id="logo" width="50" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 308.74">
+            <defs>
+
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #e2533c;
+                  stroke-miterlimit: 10;
+                  stroke-width: 4px;
+                }
+              </style>
+            </defs>
 
 
-          <center> <div class ="text1"><h4>Planter is a mobile application that makes taking care of your plants easier by helping to identify your plant and send reminders for care!</h4>
-          <p>learn more</p></div></center>
-          <div class="vl"></div>
+            <title></title>
+            <path class="cls-1" d="M207,132.53l-25.74,11.41s.11,170.43,0,189.94L207,322.47S206.94,140.89,207,132.53Z" transform="translate(-81 -26.68)"/>
+            <path class="cls-1" d="M242.85,131.89c-22-3-34.89,25.06-35.75,28.84s8.26-25.32,23.86-24.4c7.48.44,11.4,8.24,11.43,22.14-.29,48.78.16,99.27-.13,148L268,295.12v-130C267.22,147.11,258.22,134,242.85,131.89Z" transform="translate(-81 -26.68)"/>
+            <path class="cls-1" d="M196,39.91l-43.41,18q0-14.94.09-29.73L127,39.6V67.78L82,86.63v6.31l45-18.6v94.93c.78,18,14.86,31.74,30.32,32.07,12.22,2.1,23.65-10.67,23.93-15,.66,3.55-9.49,14.56-15.55,12.77-7.17-2.11-13.11-9.33-13.14-23.2.22-36.74,0-74.46,0-111.67L196,46.4Z" transform="translate(-81 -26.68)"/>
+          </svg>
+        </a>
+
+
+
+        <div id="nav" class="header-right">
+          <button class="btn active"><a href="/#work"><span>WORK</span></a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="btn"><a href="resume.html"><span>RESUME</span></a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="btn"><a href="about.html"><span>ABOUT</span></a></button>
         </div>
-
-        <div data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="700">
-          <br><br><br><br><br><br><br><br>
-          <center>
-          <br>
-          <img src="planter/idea.png" width="40">
-          <div class="text2"><h5>Planter is an application inspired by my sister who always forgot to water her plants and when she finally remembered, it was too late to save them. Planter helps the user figure out what type of plant it is as well as a short description for the plant's preferences and characteristics. The application has a simple interface that makes adding plants, setting the watering and fertilizing reminders, and checking them off daily quick and easy.
-         </h5></div>
-       </center>
       </div>
-      <div data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="700">
-        <center>
-          <br><br>
-          <h3> NAVIGATION </h3>
-          <div class="text2"><h5> I started off with a plan for Planter's navigation to highlight and plan the application's core functionalities. On the homepage, I planned to include the list of the user's plants, a button for adding plants, and a button for settings. Each plant has a picture, name, checkboxes to check off watering and fertilizing if necessary, and an edit button. When a user wants to add a plant, the user could either identify their plant using the camera or look up the plant in the library. After a brief description of the plant, the user will input the schedule for the plant's watering and fertilizing. In the settings, the user can turn on and off push notifications and learn more about Planter.
-          </h5></div>
-         <img src="planter/navi.png" width="1500">
-        </center>
-       </div>
+    </div>
 
-       <div data-aos="fade-up"
-         data-aos-easing="linear"
-         data-aos-duration="700">
-         <center>
-           <br><br>
-           <h3> BASIC WIREFRAME</h3>
-           <div class="text2"><h5>
-           </h5></div>
-          <img src="planter/basic.png" width="1500">
-         </center>
-        </div>
 
-        <div data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="700">
-          <center>
-            <br><br>
-            <h3> LIVE WIREFRAME </h3>
-            <div class="text2"><h4> Add plant by picture
-            </h4></div>
-            <div class="text2"><h5> Using the camera option, the user could take a picture of their plant and Planter will help identify the type of plant and provide basic needs and tips.
-            </h5></div>
-            <div style="height:6px;font-size:1px;">&nbsp;</div>
-           <img src="planter/addplant.gif" width="375">
-          </center>
-         </div>
+    <div class="block">
+      <div class="l">
+        <p class ="title"> PROJECT </p>
+        <p> Planter </p>
+        <p class ="title"> MY ROLE </p>
+        <p> UI Designer </p>
+      </div>
+      <div class="r">
+        <p class ="title"> SUMMARY </p>
+        <p class ="large"> I designed a mobile app that makes keeping plants happy easier
+          by helping identify plants and sending reminders for care.
+         </p>
 
-         <div data-aos="fade-up"
-           data-aos-easing="linear"
-           data-aos-duration="700">
-           <center>
-             <br><br>
-             <div class="text2"><h4> Add plant by library
-             </h4></div>
-             <div class="text2"><h5>  Another option is the utilizing the library to look up plants.
-             </h5></div>
-             <div style="height:6px;font-size:1px;">&nbsp;</div>
-            <img src="planter/addplant2.gif" width="375">
-           </center>
-          </div>
-
-          <div data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="700">
-            <center>
-              <br><br>
-              <div class="text2"><h4> Setting plant's reminders
-              </h4></div>
-              <div class="text2"><h5>  After identifying the plant, the user can set the plant's watering and fertilizing schedule.
-              </h5></div>
-              <div style="height:6px;font-size:1px;">&nbsp;</div>
-             <img src="planter/addplant3.gif" width="375">
-            </center>
-           </div>
-
-           <div data-aos="fade-up"
-             data-aos-easing="linear"
-             data-aos-duration="700">
-             <center>
-               <br><br>
-               <div class="text2"><h4> Check off plants that need care
-               </h4></div>
-               <div class="text2"><h5> The user can easily check off the plants that need to be watered and fertilized.
-               </h5></div>
-               <div style="height:6px;font-size:1px;">&nbsp;</div>
-              <img src="planter/crop.gif" width="375">
-             </center>
-            </div>
-
-            <div data-aos="fade-up"
-              data-aos-easing="linear"
-              data-aos-duration="700">
-              <center>
-                <br><br>
-                <div class="text2"><h4> Check settings for Planter
-                </h4></div>
-                <div class="text2"><h5> Adjust push notifications, read frequent Q&A, and send feedback.
-                </h5></div>
-                <div style="height:6px;font-size:1px;">&nbsp;</div>
-               <img src="planter/setting.gif" width="375">
-              </center>
-             </div>
-             <br><br>
-
-         <div id="nav" class="footer">
-           <button class="btn"><a href="index.html">All</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <button class="btn active"><a href="planter.html" style = "color:#fbc3a2; ">Planter</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <button class="btn"><a href="moneybook.html">Moneybook</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <button class="btn"><a href="munch.html">Munch</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <button class="btn"><a href="google.html">Google Calender Redesign</a></button>
-           <br><br>
-         </div>
       </div>
     </div>
 
 
 
+   <div data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="400">
+      <div class="text">
+        <div class="l">
+          <p class ="title"> PROBLEM STATEMENT </p>
+        </div>
+        <div class="r">
+          <p>  Planter is an application inspired by my sister who always forgot to water her plants and when she finally remembered, it was too late to save them. Planter helps the user figure out what type of plant it is as well as a short description for the plant's preferences and characteristics. The application has a simple interface that makes adding plants, setting the watering and fertilizing reminders, and checking them off daily quick and easy.
+          </p>
 
+        </div>
+      </div>
+    </div>
+
+    <div data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="400">
+       <div class="text" style="height:450px;">
+         <div class="l">
+           <p class ="title"> NAVIGATION</p>
+         </div>
+         <div class="r">
+           <p>  I started off with a plan for Planter's navigation to highlight and plan the application's core functionalities. On the homepage, I planned to include the list of the user's plants, a button for adding plants, and a button for settings. Each plant has a picture, name, checkboxes to check off watering and fertilizing if necessary, and an edit button. When a user wants to add a plant, the user could either identify their plant using the camera or look up the plant in the library. After a brief description of the plant, the user will input the schedule for the plant's watering and fertilizing. In the settings, the user can turn on and off push notifications and learn more about Planter.
+         </div>
+
+       </div>
+       <div data-aos="fade-up"
+         data-aos-easing="linear"
+         data-aos-duration="400">
+       <center><img id="image" style="width:1500px;"src="planter/navi.png"></center>
+      </div>
+
+     </div>
+
+     <div data-aos="fade-up"
+       data-aos-easing="linear"
+       data-aos-duration="400">
+       <div id="title" style="height:120px;"class="text">
+         <div class="l">
+           <p class ="title"> BASIC WIREFRAME CREATED ON ADOBE XD </p>
+         </div>
+       </div>
+
+       <img style="width:100%;"id="image" src="planter/basic.png">
+     </div>
+
+     <div data-aos="fade-up"
+       data-aos-easing="linear"
+       data-aos-duration="400">
+       <div class="text" style="height:350px;">
+         <div class="l">
+           <p class ="title"> LIVE WIREFRAME CREATED ON ADOBE XD </p>
+         </div>
+
+         <div class="r">
+         <p>After creating the basic structure of the wireframe, I designed
+         a live wireframe to clearly demonstrate what features the app offers. </p>
+       </div>
+
+     </div>
+   </div>
+
+   <div data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="400">
+     <div class="text" style="height:1000px;">
+       <div class="l">
+         <p class ="title"> ADD PLANT BY PICTURE </p>
+       </div>
+
+       <div class="r">
+       <p>Using the camera option, the user could take a picture of their plant and Planter will help identify the type of plant and provide basic needs and tips. </p>
+     </div>
+     <center> <img style="margin-top:250px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"src="planter/addplant.gif" width="375"></center>
+   </div>
+ </div>
+
+ <div data-aos="fade-up"
+   data-aos-easing="linear"
+   data-aos-duration="400">
+   <div class="text" style="height:1000px;">
+     <div class="l">
+       <p class ="title"> ADD PLANT BY LIBRARY</p>
+     </div>
+
+     <div class="r">
+     <p> Another option is the utilizing the library to look up plants. </p>
+   </div>
+   <center> <img style="margin-top:250px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"src="planter/addplant2.gif" width="375"></center>
+ </div>
+</div>
+
+<div data-aos="fade-up"
+  data-aos-easing="linear"
+  data-aos-duration="400">
+  <div class="text" style="height:1000px;">
+    <div class="l">
+      <p class ="title"> SET PLANT'S REMINDERS</p>
+    </div>
+
+    <div class="r">
+    <p> After identifying the plant, the user can set the plant's watering and fertilizing schedule. </p>
+  </div>
+  <center> <img style="margin-top:250px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"src="planter/addplant3.gif" width="375"></center>
+</div>
+</div>
+
+<div data-aos="fade-up"
+  data-aos-easing="linear"
+  data-aos-duration="400">
+  <div class="text" style="height:1000px;">
+    <div class="l">
+      <p class ="title"> CHECK OFF PLANTS THAT NEED CARE</p>
+    </div>
+
+    <div class="r">
+    <p> The user can easily check off the plants that need to be watered and fertilized. </p>
+  </div>
+  <center> <img style="margin-top:250px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"src="planter/crop.gif" width="375"></center>
+</div>
+</div>
+
+<div data-aos="fade-up"
+  data-aos-easing="linear"
+  data-aos-duration="400">
+  <div class="text" style="height:1000px;">
+    <div class="l">
+      <p class ="title"> SETTINGS</p>
+    </div>
+
+    <div class="r">
+    <p> Adjust push notifications, read frequent Q&A, and send feedback.</p>
+  </div>
+  <center> <img style="margin-top:250px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"src="planter/setting.gif" width="375"></center>
+</div>
+</div>
+
+<div data-aos="fade-up"
+  data-aos-easing="linear"
+  data-aos-duration="400">
+<div class="text">
+  <div class="l">
+    <p class ="title"> ENDING NOTES </p>
+  </div>
+  <div class="r">
+    <p>Through this personal project, I gained hands-on experience
+    working with Adobe XD to develop prototypes from low to high fidelity.
+    I was able to mainly strengthen my UI design skills to make an idea inspired
+    by my sister come to life. I hope to eventually implement Planter in the future
+    to improve the plant caring process.
+    </p>
+
+  </div>
+</div>
+</div>
+
+<div class = "footer">
+    <nav>
+      <a href="/#work">ALL</a>
+      <a href="trace.html">TRACE</a>
+      <a href="munch.html">MUNCH</a>
+      <a href="moneybook.html">MONEYBOOK</a>
+      <div class="strike">Planter</div>
+      <a href="food.html">FOOD LOCKER</a>
+      <a href="google.html">GOOGLE CALENDAR REDESIGN</a>
+      <br><br>
+    <nav>
+</div>
+
+  </div>
     <script src="dist/aos.js"></script>
+    <script src="javascript/logo.js"></script>
+    <script src="javascript/type.js"></script>
+    <script src="javascript/animsition.js"></script>
+
+
     <script>
       AOS.init({
         easing: 'ease-in-out-sine'
@@ -205,6 +294,33 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+    </script>
+
+    <script>
+    $(document).ready(function() {
+      $(".animsition").animsition({
+        inClass: 'fade-in-up-sm',
+        outClass: 'fade-out-up-sm',
+        inDuration: 1500,
+        outDuration: 800,
+        linkElement: '.animsition-link',
+        // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+        loading: true,
+        loadingParentElement: 'body', //animsition wrapper element
+        loadingClass: 'animsition-loading',
+        loadingInner: '', // e.g '<img src="loading.svg" />'
+        timeout: false,
+        timeoutCountdown: 5000,
+        onLoadEvent: true,
+        browser: [ 'animation-duration', '-webkit-animation-duration'],
+        // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        overlay : false,
+        overlayClass : 'animsition-overlay-slide',
+        overlayParentElement : 'body',
+        transition: function(url){ window.location.href = url; }
+      });
+    });
     </script>
   </body>
 </html>

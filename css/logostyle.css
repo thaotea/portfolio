@@ -1,0 +1,53 @@
+
+
+#logo {
+  position: absolute;
+  left:3%;
+}
+
+
+
+#logo path:nth-child(5) {
+  stroke-dasharray: 626;
+  stroke-dashoffset: 626;
+  animation: line-anim 1s ease forwards, Fills 1s ease forwards 0.8s;
+
+}
+
+
+#logo path:nth-child(3) {
+  stroke-dasharray: 438;
+  stroke-dashoffset: 438;
+  animation: line-anim 1s ease forwards .5s, Fills 1s ease forwards 1.3s;
+}
+
+
+#logo path:nth-child(4) {
+  stroke-dasharray: 466;
+  stroke-dashoffset: 466;
+  animation: line-anim 1s ease forwards .5s, Fills 1s ease forwards 1.3s;
+}
+
+
+
+
+
+
+
+
+
+@keyframes line-anim{
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@keyframes Fills {
+    from {
+        fill:transparent;
+    }
+    to {
+        fill: #e2533c;
+    }
+}
