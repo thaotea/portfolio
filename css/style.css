@@ -175,6 +175,7 @@ h5, h4, h3, p { cursor: default; }
   letter-spacing:.30px;
   line-height:32px;
   cursor:default;
+  width:100%;
 }
 
 .body {
