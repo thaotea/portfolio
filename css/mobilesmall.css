@@ -1,0 +1,59 @@
+#work .child {
+  visibility:hidden;
+}
+
+.trace {
+  width:100%;
+  height:500px;
+  background-size:cover;
+  background-image: url('../trace/mobile.png');
+}
+
+.munch {
+  width:100%;
+  height:500px;
+  background-size:cover;
+  background-image: url('../munch/mobile.png');
+
+}
+
+
+.planter {
+  width:100%;
+  height:500px;
+  background-size:cover;
+  background-image: url('../planter/mobile.png');
+
+}
+
+
+.moneybook {
+  width:100%;
+  height:500px;
+  background-size:cover;
+  background-image: url('../money/mobile.png');
+
+}
+
+
+.calendar {
+  width:100%;
+  height:500px;
+  background-size:cover;
+  background-image: url('../google/mobile.png');
+
+}
+
+.deep {
+  width:100%;
+  height:500px;
+  background-size:cover;
+}
+
+.food {
+  width:100%;
+  height:500px;
+  background-size:cover;
+  background-image: url('../food/mobile.png');
+
+}

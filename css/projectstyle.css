@@ -32,6 +32,11 @@
   background-image:url(../google/2.png);
 }
 
+#food-background {
+  background-image:url(../food/background1.jpg);
+}
+
+
 #about-background {
   background-image:url(../images/about.png);
   height:550px;
@@ -97,6 +102,7 @@ p.number {
   padding:0px;
   margin:0px;
   background-color:#f2bd55;
+
 }
 
 
@@ -211,4 +217,30 @@ p.number {
 .button-one:hover::after {
 	opacity: 0;
 	transform: scale(0.1, 1);
+}
+
+#short {
+  height:400px;
+}
+#long {
+  height:800px;
+}
+#long-image {
+  height:800px;
+}
+#longer {
+  height:1100px;
+}
+#longest {
+  height:1100px;
+}
+
+#longestest {
+  height:1400px;
+}
+
+
+#planter-screen {
+  margin-top:250px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

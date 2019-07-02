@@ -171,20 +171,19 @@
 
 
 
- html, body {
-   width: 100%;
-   max-width: 100%;
-   margin: 0px;
-   padding: 0px;
-   overflow-x: hidden;
+  html, body {
+   width: 100vw;
+   max-width: 100vw;
+   overflow-x:hidden;
 
  }
 
 
 
-
  ::-webkit-scrollbar {
    width: 5px;
+   padding:0px;
+   margin:0px;
  }
 
  .header-right {
@@ -193,6 +192,7 @@
 
  .block {
    height:auto;
+
  }
 
  .l {
@@ -232,3 +232,10 @@
   width:200%;
   margin-left:-50%;
 }
+
+.footer {
+  padding-top:100px;
+}
+
+#planter-screen {
+  margin-top:100px;}
