@@ -105,8 +105,7 @@ p.number {
 
 }
 
-
-.r {
+.block .r {
   position:absolute;
   left:45%;
   top:100px;
@@ -114,7 +113,7 @@ p.number {
 
 }
 
-.l {
+.block .l {
   position:absolute;
   left:20%;
   top:100px;
@@ -122,11 +121,24 @@ p.number {
 
 .text {
   position:relative;
-  height:500px;
+  height:auto;
+  padding-top:5%;
+  padding-bottom:5%;
+}
+
+#shorttext {
+  padding-top:1%;
+  padding-bottom:1%;
+}
+
+.text .l {
+  position:absolute;
+  padding-left:20%;
 }
 
 .text .r {
-  max-width:600px;
+  padding-left:45%;
+  width:80%;
 }
 
 
@@ -219,37 +231,7 @@ p.number {
 	transform: scale(0.1, 1);
 }
 
-#short {
-  height:400px;
-}
-#long {
-  height:800px;
-}
-#longer {
-  height:950px;
-}
-#long-image {
-  height:800px;
-}
-
-#longest {
-  height:1100px;
-}
-
-#longestest {
-  height:1400px;
-}
-
-#longestestest {
-  height:1000px;
-}
-
 
 #planter-screen {
-  margin-top:250px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#pad-500 {
-  padding-top:510px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

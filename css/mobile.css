@@ -1,189 +1,16 @@
-/*html,body
-{
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-}
-.header {
-  padding: 0px;
-  margin:0px;
-}
-
-.header-background {
-  padding:0px;
-  position: absolute;
-  z-index:-1;
-  top: 0px;
-  width:100%;
-  height:80%;
-  margin: 0px;
-  background-image: linear-gradient(to right bottom, #ffafbd, #ffb3b4, #ffb7ac, #ffbda5, #ffc3a0);
-}
-
-.intro {
-  color: white;
-  font-size:16px;
-}
-
-#nav {
-  display:none;
-}
-
-#hello {
-  width:150px;
-}
-
-.explore {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%);
-  font-size:20px;
-  font-weight:550;
-  color: #fbc3a2;
-}
-
-.aos-item {
-  padding:0px;
-  position: absolute;
-  top: 120%;
-  width: 100%;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
- }
-
-
- .trace .description .button {
-   border: 1.3px solid white;
-   color: white;
-   width:60%;
- }
-
- #plantertitle { color: white; }
-
- .planter .description .button {
-   border: 1.3px solid white;
-   color: white;
-   width:60%;
- }
-
- #plantertitle { color: white; }
-
- .moneybook .description .button {
-   border: 1.3px solid white;
-   color: white;
-   width:60%;
- }
-
- #moneybooktitle { color: white; }
-
- .munch .description .button {
-   border: 1.3px solid white;
-   color: white;
-   width:60%;
-
- }
-
- #munchtitle { color: white; }
-
-
- .calendar .description .button {
-   border: 1.3px solid white;
-   color: white;
-   width:60%;
-
- }
-
- #googletitle { color: white; }
-
-
-  .description {
-    padding:0px;
-    width:80%;
-  }
-
-  .trace {
-    padding:0px;
-    background-image: linear-gradient(to bottom, #fab9a7, #c98c9a, #8b6988, #484a6a, #032c41);
-    height:600px;
-    width:100%;
-  }
-
- .planter {
-   padding:0px;
-   background-image: linear-gradient(to bottom, #fab9a7, #c98c9a, #8b6988, #484a6a, #032c41);
-   height:600px;
-   width:100%;
- }
-
- .moneybook {
-   padding:0px;
-   background-image: linear-gradient(to bottom, #032c41, #0a3a55, #144a69, #1d597e, #286994);
-   width:100%;
-   height:600px;
- }
-
- .munch {
-   padding:0px;
-   background-image: linear-gradient(to bottom, #286994, #456a9a, #5e6b9e, #756b9f, #896b9d);
-   width:100%;
-   height:600px;
- }
-
- .calendar {
-   padding:0px;
-   background-image: linear-gradient(to bottom, #896b9d, #a2759b, #b4819a, #c28f9b, #cb9f9f);  float:right;
-   width:100%;
-   height:600px;
- }
-
-
- .right {
-   padding:0px;
-   right:50%;
-   transform: translate(-50%);
-   top: 50px;
-   color:white;
-   width:90%;
- }
-
-
- .left {
-   padding:0px;
-   position: absolute;
-   left:50%;
-   transform: translate(-40%);
-   top: 50px;
-   color:white;
-   width:90%;
-
- }
-
- .bottom {
-   position:absolute;
-   top: 4550px;
- }*/
-
-
-
-  html, body {
+html, body {
    width: 100vw;
    max-width: 100vw;
    overflow-x:hidden;
-
  }
-
 
 
  ::-webkit-scrollbar {
    width: 5px;
-   padding:0px;
-   margin:0px;
+ }
+
+ .body {
+   width:60%;
  }
 
  .header-right {
@@ -192,7 +19,6 @@
 
  .block {
    height:auto;
-
  }
 
  .l {
@@ -211,16 +37,21 @@
  }
 
  .text {
+   position:relative;
    height:auto;
  }
+
  .text .l {
-   width:85%;
    left:5%;
+   width:85%;
+   padding-left:0%;
+
  }
 
  .text .r {
-   width:85%;
    left:5%;
+   width:85%;
+   padding-left:0%;
  }
 
 .text .r p {
@@ -236,22 +67,3 @@
 .footer {
   padding-top:100px;
 }
-
-#planter-screen {
-  margin-top:100px;}
-
-  #longestest {
-    height:1000px;
-  }
-
-  #pad-500 {
-    padding-top:200px;
-  }
-
-  #longer {
-    height:1100px;
-  }
-
-  #longestestest {
-    height:1300px;
-  }
