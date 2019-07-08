@@ -54,6 +54,7 @@ h5, h4, h3, p { cursor: default; }
 }
 
 .header {
+  width:100%;
   padding: 15px;
 }
 
@@ -76,9 +77,9 @@ h5, h4, h3, p { cursor: default; }
 
 
 .header-right {
-  position: relative;
-  top:50px;
-  right:5%;
+  position: absolute;
+  top:60px;
+  right:4%;
   float:right;
 }
 
