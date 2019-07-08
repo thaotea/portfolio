@@ -569,7 +569,7 @@ nav a {
   font-weight:900;
   letter-spacing:2px;
   text-decoration: none;
-  color: rgb(68,68,68,0.60);
+  color: rgba(68,68,68,0.60);
   margin: 0 15px;
   display: inline-block;
   transition: all .25s cubic-bezier(1, 0, 0.58, 0.97);
