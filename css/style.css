@@ -79,7 +79,7 @@ h5, h4, h3, p { cursor: default; }
 .header-right {
   position: absolute;
   top:60px;
-  right:4%;
+  right:3%;
   float:right;
 }
 
