@@ -79,8 +79,7 @@ h5, h4, h3, p { cursor: default; }
 .header-right {
   position: absolute;
   top:60px;
-  right:3%;
-
+  right:5%;
   float:right;
 }
 
@@ -506,13 +505,13 @@ h4 {
   height: 50px;
   padding-top: 5px;
   border-radius: 50%;
-  transition:3s;
+  transition:1.5s;
 
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 2s; /* Firefox < 16 */
-      -ms-animation: fadein 2s; /* Internet Explorer */
-       -o-animation: fadein 2s; /* Opera < 12.1 */
-          animation: fadein 2s;
+  -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 1.5s; /* Firefox < 16 */
+      -ms-animation: fadein 1.5s; /* Internet Explorer */
+       -o-animation: fadein 1.5s; /* Opera < 12.1 */
+          animation: fadein 1.5s;
 }
 
 #top:hover {
@@ -596,6 +595,11 @@ nav a:hover:before {
 
 nav a:hover {
   color: rgba(68,68,68,1.00);
+}
+
+a.logo:hover {
+  transition: 0.3s;
+  opacity:0.9;
 }
 
 @keyframes show {
