@@ -80,6 +80,7 @@ h5, h4, h3, p { cursor: default; }
   position: absolute;
   top:60px;
   right:3%;
+
   float:right;
 }
 
