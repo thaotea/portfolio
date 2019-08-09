@@ -67,3 +67,28 @@ html, body {
 .footer {
   padding-top:100px;
 }
+
+#image2 {
+  padding-top:0px;
+  width:95%;
+}
+
+#image3 {
+  padding-top:0px;
+  width:95%;
+}
+
+#halfimage {
+  width:95%;
+  height:auto;
+}
+
+#halfimage2 {
+  width:95%;
+  height:auto;
+}
+
+#halfimage3 {
+  width:95%;
+  height:auto;
+}

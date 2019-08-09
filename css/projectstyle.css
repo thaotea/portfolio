@@ -147,6 +147,10 @@ p.number {
   top:5000px;
 }
 
+.text a {
+  color: #e2533c;
+}
+
 
 #title {
   height:70px;
@@ -160,6 +164,39 @@ p.number {
   width:90%;
   overflow:hidden;
 }
+
+#image2 {
+  padding-top:50px;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  width:40%;
+  overflow:hidden;
+}
+
+#image3 {
+  padding-top:50px;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  width:60%;
+  overflow:hidden;
+}
+
+#halfimage {
+  height:450px;
+}
+
+#halfimage2 {
+  height:600px;
+}
+
+#halfimage3 {
+  height:800px;
+  padding-top:5px;
+}
+
+
 
 
 .button {
